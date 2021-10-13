@@ -1,0 +1,18 @@
+x = 0:.1:20;
+y1 = 0.5*gaussmf(x, [3 7]);
+plot(x, y1)
+hold on
+y2 = 1.5*gaussmf(x, [1 12]);
+plot(x, y2, 'r')
+y3 = y1+y2;
+plot(x, y3, 'g')
+hold off
+%%
+
+x= 0:0.1:30;
+y1 = 0.5*gaussmf(x, [3 7]);
+y2 = 1.5*gaussmf(x, [1 12]);
+y3 = gaussmf(x, [6 14]);
+
+y = multGauss(
+
