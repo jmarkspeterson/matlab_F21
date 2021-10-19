@@ -9,9 +9,8 @@ else
     error('gauss does not have 3 columns')
 end
 
-for n = 1:rownum %for loop that will make an individual gaussian distribution for each row of gauss matrix
+for n = 1:rownum %for loop that will make individual gaussian distribution from 
     yindividual(n,:) = gauss(n,1)*gaussmf(x, [gauss(n,2) gauss(n,3)]);
-    %yindividual(n,:) creates a new matrix of all gaussian distribution
 end
 
-y = sum(yindividual) %y variable is the sum of yindividual 
+y = sum(ynum)

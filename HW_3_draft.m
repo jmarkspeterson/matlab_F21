@@ -23,3 +23,15 @@ plot(x,y3)
 plot(x, y)
 hold off
 
+%%
+x=0:0.1:20;
+amp = [0.1 0.5 1 2];
+wid = [0.5 1 2 3];
+loc = [2 4 6 8];
+
+gauss = [amp; wid; loc]'
+
+y = multGauss(x, gauss)
+
+
+plot(y)
